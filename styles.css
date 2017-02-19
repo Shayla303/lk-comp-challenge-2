@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
   width: 100%;
 }
 
@@ -15,6 +16,10 @@ h2, h4, h5 {
 h1 {
   display: inline-block;
   text-indent: -9999px;
+}
+
+h2 {
+  margin: 15px
 }
 
 h3 {
@@ -61,12 +66,12 @@ a {
 /*Header*/
 header{
   background-color: #33373A;
-  padding: 10px;
 }
 
 .header-top {
   display: flex;
   justify-content: flex-end;
+  padding: 10px 20px;
 }
 
 .admin-login {
@@ -80,9 +85,10 @@ header{
 }
 
 .header-bottom {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 20px;
 }
 
 nav {
@@ -209,12 +215,47 @@ h3.ingredients-number {
 
 
 
+@media screen and (max-width: 900px) {
+  .admin-login a,
+  .admin-menu-icon {
+    display: none;
+  }
 
-@media screen and (max-width: 790px) {
+  .admin-icon {
+    height: 40px;
+    margin: 10px;
+    width: 40px;
+  }
+
+  nav {
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .nav {
+    height: 40px;
+    margin-right: 0;
+  }
+
   .header-bottom {
     flex-direction: column-reverse;
   }
 
+  .logo {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  nav {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 790px) {
   .recipe-card {
     width: 45%;
   }
@@ -224,14 +265,15 @@ h3.ingredients-number {
   }
 }
 
-@media screen and (max-width: 590px) {
-  nav {
-    margin: 20px;
+@media screen and (max-width: 620px) {
+  .nav-icon {
+    height: 40px;
+    width: 40px;
+
   }
 
-  .nav {
-    margin-right: 30px;
-    height: 40px;
+  .nav a {
+    display: none;
   }
 
   h2 {
@@ -244,5 +286,11 @@ h3.ingredients-number {
 
   .recipe-card {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    width: 250px;
   }
 }
