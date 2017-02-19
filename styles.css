@@ -1,46 +1,138 @@
-body {}
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
 
-header{}
+/*Fonts*/
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
 
-h1, h2, h3, h4 {}
-
-p {}
+p {
+}
 
 a {
+  color: #FFFDF7;
+  font-weight: 300;
+  margin: 0 0 10px 0;
   text-decoration: none;
+  vertical-align: 8px;
 }
 
-a:hover {}
+a:hover {
 
-a:selected {
 }
 
-h1{
-  display: block;
+.selected {
+  font-weight: 400;
+}
+
+.icon {
+  display: inline-block;
+  height: 22px;
+  margin: 0 10px;
+  width: 20px;
+}
+
+/*Header*/
+header{
+  background-color: #33373A;
+  padding: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  display: inline-block;
   text-indent: -9999px;
 }
 
-.admin-login{}
+.admin-login {
+  display: inline-block;
+  float: right;
+}
 
-.shares,
-.menus,
-.my-recipes {}
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-#recipe-box {}
+nav {
+  display: flex;
+  align-content: space-around;
+}
+
+.nav {
+margin-right: 25px;
+opacity: 0.5;
+}
+
+.nav:hover {
+  opacity: 1;
+}
+
+.shares {
+  opacity: 1;
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 30px;
+}
+
+.logo {
+  float: right;
+  margin: 0 15px 10px 0;
+  width: 300px;
+}
+
+#recipe-box {
+  background-color: #FFFDF7;
+  height: 85vh;
+  padding: 5px;
+}
 
 h2 {}
 
-.card-holder {}
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start space-around;
+}
 
-.recipe-card {}
+.recipe-card {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 5px #D0D0D0;
+  margin: 10px;
+  width: 22%;
+}
 
-.recipe-image {}
+.recipe-image {
+  background: url('images/recipe-image.jpg') no-repeat 0 0px;
+  background-size: cover;
+  height: 150px;
+  margin: 0;
+  width: 100%;
+}
 
 .see-recipe {}
 
 .view-count {}
 
-h3 {}
+.views {
+  margin: 0;
+}
+
+h3 {
+}
+
+.recipe-overview {
+  padding: 10px;
+}
 
 h4 {}
 
@@ -56,7 +148,7 @@ h3.ingredients-number {}
 
 
 /*Break for tablets*/
-@media screen and (width: 900px;) {
+@media screen and (width: 970px;) {
 
 }
 
